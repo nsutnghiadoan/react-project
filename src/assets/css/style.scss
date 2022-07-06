@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+    font-size: 40px;
+    color: red;
+    .Header {
+        display: flex;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
