@@ -1,0 +1,31 @@
+.todo {
+
+    margin-top: 60px;
+    .field {
+        // display: flex;
+        .input_wrapper {
+            .required {
+                color: red;
+                font-size: 10px;
+            }
+        }
+    }
+    .filter {
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            font-size: 19px;
+            line-height: 20px;
+            justify-content: space-around;
+            li {
+                cursor: pointer;
+                &.active {
+                    transition-delay: 0.25s;
+                    border-bottom: 5px solid blue;
+                    transition-duration: 0.25s;
+                }   
+            }
+        }
+    }
+}
