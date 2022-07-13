@@ -1,7 +1,6 @@
-import { ADD_TODO, UPDATE_TODO, DELETE_TODO } from "./action";
-import { INCREMENT, MINUS} from './numAction'
-import { initState, initNum } from "./state";
-export let reducer =  (state = initState, action)=>{
+import { ADD_TODO, UPDATE_TODO, DELETE_TODO, INCREMENT, MINUS } from "./action";
+import { initState } from "./state";
+export let todoReducer =  (state = initState, action)=>{
     let newTodos;
     switch(action.type){
         case ADD_TODO :
@@ -17,15 +16,8 @@ export let reducer =  (state = initState, action)=>{
             newTodos = [...state]
             newTodos = newTodos.filter(todo => todo.id != action.payload)
             return newTodos
+        default:
+            return initState
     }
 }
-export let increReducer = (state = initNum, numAction)=>{
-    switch(numAction.typeAction){
-        case INCREMENT :
-            state +=1
-            return state
-        case MINUS :
-            state -=1
-            return state
-    }
-}
+export const selectTodo = (state) => state.todoReducer;

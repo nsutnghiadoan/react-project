@@ -1,4 +1,8 @@
-import { createStore } from "redux";
-import { reducer ,increReducer} from "./reducer";
-const store = createStore(reducer, increReducer)
+import { combineReducers, createStore } from "redux";
+import { todoReducer } from "./reducer";
+import { increReducer } from "./increReducer";
+const store = createStore(combineReducers({
+    todoReducer,
+    increReducer,
+}))
 export default store

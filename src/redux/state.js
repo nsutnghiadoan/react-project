@@ -1,2 +1,4 @@
 export const initState = []
-export const initNum = 0
+export const initNum = {
+    value : 0
+}

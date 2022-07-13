@@ -11,7 +11,10 @@ export default function Navbar(props) {
         <nav className='navbar'>
             <ul>
                 <li>
-                    <Link to='/home'>React basic</Link>
+                    <Link to='/home'>React hook practice</Link>
+                </li>
+                <li>
+                    <Link to='/todo'>Todo List</Link>
                 </li>
                 <li>
                     <Link to='/about'>React Advanced</Link>
