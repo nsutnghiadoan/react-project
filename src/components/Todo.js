@@ -3,11 +3,24 @@ import '../assets/css/todo.scss'
 import TodoInput from './TodoInput';
 import TodoItem from './TodoItem';
 import TodoList from './TodoList';
+import {Container} from '@chakra-ui/react';
+import { Row, Col } from 'react-bootstrap';
+
 function Todo() {
    return (
     <div className='todo'>
-        <TodoInput />
-        <TodoList />
+        <Container>
+            <Row>
+                <Col>
+                    <TodoInput />
+                    <TodoList />
+                </Col>
+                <Col>
+                    {/* <Filter></Filter> */}
+                    <h1>àghjk</h1>
+                </Col>
+            </Row>
+        </Container>
     </div>
    )
 }
