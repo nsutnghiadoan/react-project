@@ -9,14 +9,14 @@ export default function About() {
   return (
     <>
         <div className='advanced'>
-          <Button 
+          {/* <Button 
             size='md'
             border='2px'
             borderColor='red'
             rightIcon={<MdOutlinePhonelink />}
           >
               abc
-          </Button>
+          </Button> */}
         </div>
     </>
   )

@@ -17,7 +17,6 @@ function Todo() {
                 </Col>
                 <Col>
                     {/* <Filter></Filter> */}
-                    <h1>àghjk</h1>
                 </Col>
             </Row>
         </Container>
